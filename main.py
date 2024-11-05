@@ -8,7 +8,7 @@ def merge_two_list(l1, l2):
     ips_ports = []
     for item in l1:
         if item.strip():
-            item = item.replace("/?POST%20", "")
+            item = item.replace("/?POST%20", "").strip()
             ip_port = item.split("@")[1]
             if not ip_port in ips_ports:
                 ips_ports.append(ip_port)
@@ -17,7 +17,7 @@ def merge_two_list(l1, l2):
         
     for item in l2:
         if item.strip():
-            item = item.replace("/?POST%20", "")
+            item = item.replace("/?POST%20", "").strip()
             ip_port = item.split("@")[1]
             if not ip_port in ips_ports:
                 ips_ports.append(ip_port)
@@ -25,6 +25,7 @@ def merge_two_list(l1, l2):
     print(l1)
     print(l2)
     print(l3)
+    print(ips_ports)
     return list(set(l3))
 
 
