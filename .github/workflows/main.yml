@@ -17,8 +17,6 @@ jobs:
         with:
           python-version: "3.11"
           cache: "pip"
-      - name: Set Timezone
-        run: sudo timedatectl set-timezone 'Asia/Tehran'
       - name: Install Requirements
         run: |
           pip install requests
