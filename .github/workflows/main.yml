@@ -1,28 +1,3 @@
-
-name: Collect
-
-on:
-  schedule:
-    # - cron: '*/5 * * * *'
-    # 表达式生成  https://crontab.guru/
-    - cron: "5,15,25,35,45,55 * * * *"
-
-jobs:
-  main:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4.7.0
-        with:
-          python-version: "3.11"
-          cache: "pip"
-      - name: Install Requirements
-        run: |
-          pip install -r ./requirements.txt
-      - name: Running Collector
-        run: python main.py
-      - name: Commit Changes
-
 name: Collect
 
 on:
