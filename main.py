@@ -2,16 +2,29 @@ import requests
 import json
 import os
 
+
 def merge_two_list(l1, l2):
     l3 = []
+    ips_ports = []
     for item in l1:
         if item.strip():
-            l3.append(item)
+            item = item.replace("/?POST%20", "")
+            ip_port = item.split("@")[1]
+            if not ip_port in ips_ports:
+                ips_ports.append(ip_port)
+                l3.append(item.strip())
+
         
     for item in l2:
         if item.strip():
-            l3.append(item)
-    
+            item = item.replace("/?POST%20", "")
+            ip_port = item.split("@")[1]
+            if not ip_port in ips_ports:
+                ips_ports.append(ip_port)
+                l3.append(item.strip())
+    print(l1)
+    print(l2)
+    print(l3)
     return list(set(l3))
 
 
