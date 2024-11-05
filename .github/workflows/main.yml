@@ -17,11 +17,9 @@ jobs:
           python-version: "3.11"
           cache: "pip"
       - name: Install Requirements
-        run: |
-          pip install requests
+        run: pip install requests
       - name: Running Collector
-        run: |
-          python ./main.py
+        run: python main.py
       - name: Commit Changes
         run: |
           git config --local user.email "actions@github.com"
