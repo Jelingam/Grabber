@@ -4,11 +4,15 @@ on:
   schedule:
     # - cron: '*/5 * * * *'
     # 表达式生成  https://crontab.guru/
-    - cron: "8,18,28,38,48,58 * * * *"
+    - cron: "5,15,25,35,45,55 * * * *"
 
 jobs:
   main:
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v4.7.0
@@ -21,4 +25,3 @@ jobs:
       - name: Running Collector
         run: python main.py
       - uses: stefanzweifel/git-auto-commit-action@v5
-
