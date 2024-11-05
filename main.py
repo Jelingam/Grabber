@@ -9,7 +9,7 @@ def merge_two_list(l1, l2):
     for item in l1:
         if item.strip():
             item = item.replace("/?POST%20", "").strip()
-            ip_port = item.split("@")[1]
+            ip_port = item.split("@")[1].split("#")[0]
             if not ip_port in ips_ports:
                 ips_ports.append(ip_port)
                 l3.append(item.strip())
@@ -18,16 +18,25 @@ def merge_two_list(l1, l2):
     for item in l2:
         if item.strip():
             item = item.replace("/?POST%20", "").strip()
-            ip_port = item.split("@")[1]
+            ip_port = item.split("@")[1].split("#")[0]
             if not ip_port in ips_ports:
                 ips_ports.append(ip_port)
                 l3.append(item.strip())
-    print(l1)
-    print(l2)
-    print(l3)
-    print(ips_ports)
     return list(set(l3))
 
+def rename_configs(confs):
+    renamed_config = []
+    for conf in confs:
+        conf = conf.strip()
+        if conf.startswith("ss://"):
+            ip = conf.split("@")[1].split("#")[0].split(":")[0]
+            res = requests.get(f"https://api.iplocation.net/?ip={ip}")
+            data = json.loads(res.text)
+            c = data["country_code2"]
+            name = f"{c} - {ip}"
+            conf = conf.split("#")[0] + f"#{name}"
+            renamed_config.append(conf)
+    return renamed_config
 
 with open("url.json") as f:
     alldata  = json.load(f)
@@ -56,18 +65,20 @@ for sub in alldata["subs"]:
         with open(f"subs/detail/{name}.txt") as f:
             old_configs = f.readlines()
         merge_configs = merge_two_list(new_configs, old_configs)
+        renamed_configs = rename_configs(merge_configs)
         
         with open(f"subs/detail/{name}.txt", "w") as f:
-            for i, item in enumerate(merge_configs):
-                if i + 1 == len(merge_configs):
+            for i, item in enumerate(renamed_configs):
+                if i + 1 == len(renamed_configs):
                     f.write(f"{item}")
                 else:
                     f.write(f"{item}\n")
     else:
         merge_configs = merge_two_list(new_configs, [])
+        renamed_configs = rename_configs(merge_configs)
         with open(f"subs/detail/{name}.txt", "w") as f:
-            for i, item in enumerate(merge_configs):
-                if i + 1 == len(merge_configs):
+            for i, item in enumerate(renamed_configs):
+                if i + 1 == len(renamed_configs):
                     f.write(f"{item}")
                 else:
                     f.write(f"{item}\n")
