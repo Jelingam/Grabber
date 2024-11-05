@@ -2,13 +2,6 @@
 name: Collect
 
 on:
-  workflow_dispatch:
-
-  #push:
-    #paths:
-      #- "./subs/sub_merge_base64.txt"
-      #- "./sub/sub_merge_yaml.yml"
-
   schedule:
     # - cron: '*/5 * * * *'
     # 表达式生成  https://crontab.guru/
