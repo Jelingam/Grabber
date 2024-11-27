@@ -1,7 +1,7 @@
-hysteria2://Jhasvndvj@riucvvnsl@95.182.98.246:8443?&insecure=1&obfs=salamander&obfs-password=Tw1nPigs#Hy2-IPV4
-hysteria2://Jhasvndvj@riucvvnsl@[2a13:7c00:5:19:f816:3eff:fe30:9ac3]:8443?&insecure=1&obfs=salamander&obfs-password=Tw1nPigs#Hy2-IPV6
-hysteria2://Jhasvndvj@riucvvnsl@95.182.98.246:8443?mport=40000-50000&insecure=1&obfs=salamander&obfs-password=Tw1nPigs#Hy2-IPV4-Mport
-hysteria2://Jhasvndvj@riucvvnsl@[2a13:7c00:5:19:f816:3eff:fe30:9ac3]:8443?mport=40000-50000&insecure=1&obfs=salamander&obfs-password=Tw1nPigs#Hy2-IPV6-Mport
-hysteria2://Jhasvndvj@riucvvnsl@95.182.98.246:40000-50000?&insecure=1&obfs=salamander&obfs-password=Tw1nPigs#Hy2-IPV4-Mport2
-hysteria2://Jhasvndvj@riucvvnsl@[2a13:7c00:5:19:f816:3eff:fe30:9ac3]:40000-50000?&insecure=1&obfs=salamander&obfs-password=Tw1nPigs#Hy2-IPV6-Mport2
+hysteria2://Jhasvndvj@riucvvnsl@95.182.98.246:8443?&insecure=1&obfs=salamander&obfs-password=ASdsksd414d@dkcj#Hy2-IPV4
+hysteria2://Jhasvndvj@riucvvnsl@[2a13:7c00:5:19:f816:3eff:fe30:9ac3]:8443?&insecure=1&obfs=salamander&obfs-password=ASdsksd414d@dkcj#Hy2-IPV6
+hysteria2://Jhasvndvj@riucvvnsl@95.182.98.246:8443?mport=40000-50000&insecure=1&obfs=salamander&obfs-password=ASdsksd414d@dkcj#Hy2-IPV4-Mport
+hysteria2://Jhasvndvj@riucvvnsl@[2a13:7c00:5:19:f816:3eff:fe30:9ac3]:8443?mport=40000-50000&insecure=1&obfs=salamander&obfs-password=ASdsksd414d@dkcj#Hy2-IPV6-Mport
+hysteria2://Jhasvndvj@riucvvnsl@95.182.98.246:40000-50000?&insecure=1&obfs=salamander&obfs-password=ASdsksd414d@dkcj#Hy2-IPV4-Mport2
+hysteria2://Jhasvndvj@riucvvnsl@[2a13:7c00:5:19:f816:3eff:fe30:9ac3]:40000-50000?&insecure=1&obfs=salamander&obfs-password=ASdsksd414d@dkcj#Hy2-IPV6-Mport2
 brook://server?name=brook&password=Kj12yt%402Ojt5fg&server=95.182.98.246%3A8778
