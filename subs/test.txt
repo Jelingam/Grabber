@@ -1,5 +1,5 @@
 hysteria2://lsdkjc03cwef@45.89.244.247:8443?&insecure=1&obfs=salamander&obfs-password=dsfgsssrovaer#Hy2-IPV4
-hysteria2://lsdkjc03cwef@tuncloud.roozegaregharibist.sbs:2053?&insecure=1&obfs=salamander&obfs-password=dsfgsssrovaer#Hy2-IPV4-tunnel
+hysteria2://lsdkjc03cwef@tuncloud.roozegaregharibist.sbs:443?&insecure=1&obfs=salamander&obfs-password=dsfgsssrovaer#Hy2-IPV4-tunnel
 hysteria2://lsdkjc03cwef@it.roozegaregharibist.sbs:2053?&insecure=1&obfs=salamander&obfs-password=dsfgsssrovaer#Hy2-IPV4-dns
 hysteria2://lsdkjc03cwef@[2a13:7c00:4:19:f816:3eff:fe9a:48f7]:8443?&insecure=1&obfs=salamander&obfs-password=dsfgsssrovaer#Hy2-IPV6-
 hysteria2://lsdkjc03cwef@45.89.244.247:8443?mport=40000-50000&insecure=1&obfs=salamander&obfs-password=dsfgsssrovaer#Hy2-IPV4-Mport
