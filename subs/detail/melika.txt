@@ -1,0 +1,116 @@
+{
+  "outbounds": [
+    {
+      "type": "xray",
+      "tag": "فنلاند - Fastly",
+      "xray_outbound_raw": {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "199.232.32.192",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "",
+                  "id": "90946098-0f43-492a-a6dc-33f94b1760d1"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "allowInsecure": true,
+            "alpn": [
+              "http/1.1"
+            ],
+            "fingerprint": "chrome",
+            "rejectUnknownSni": false,
+            "serverName": "fastly.com"
+          },
+          "wsSettings": {
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            },
+            "host": "gahanbamanberaghss.com",
+            "path": "/?ed=2560"
+          }
+        },
+        "tag": "Fastly"
+      }
+    },
+    {
+      "type": "xray",
+      "tag": "فنلاند - Gcore",
+      "xray_outbound_raw": {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "81.28.12.12",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "",
+                  "id": "d2b73767-dcd3-4446-9601-38e817c5c5f9"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "allowInsecure": false,
+            "alpn": [
+              "http/1.1"
+            ],
+            "fingerprint": "chrome",
+            "rejectUnknownSni": false,
+            "serverName": "gcore.com"
+          },
+          "wsSettings": {
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            },
+            "host": "pointtofastlyiplist.com",
+            "path": "/?ed=2560"
+          }
+        },
+        "tag": "vless-ws-gcore-e5vgg22a"
+      },
+      "xray_fragment": {
+        "packets": "",
+        "length": "",
+        "interval": "",
+        "host1_header": "",
+        "host1_domain": "",
+        "host2_header": "",
+        "host2_domain": ""
+      },
+      "xray_loglevel": ""
+    },
+    {
+      "type": "hysteria2",
+      "tag": "هلند - hysteria2",
+      "server": "45.89.244.7",
+      "server_port": 443,
+      "obfs": {
+        "type": "salamander",
+        "password": "Ksadcjasad52csds4csch"
+      },
+      "password": "Pua5sGX3k0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true
+      }
+    }
+  ]
+}
